@@ -1,0 +1,20 @@
+## missi_phone_global-user 14 UP1A.231005.007 V816.0.7.0.UOQIDXM release-keys
+- Manufacturer: xiaomi
+- Platform: common
+- Codename: mihal
+- Brand: Redmi
+- Flavor: missi_phone_global-user
+- Release Version: 14
+- Kernel Version: 5.10.209
+- Id: UP1A.231005.007
+- Incremental: V816.0.7.0.UOQIDXM
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: true
+- Treble Device: true
+- Locale: en-GB
+- Screen Density: undefined
+- Fingerprint: Redmi/mihal/mihal:12/SP1A.210812.016/V816.0.7.0.UOQIDXM:user/release-keys
+- OTA version: 
+- Branch: missi_phone_global-user-14-UP1A.231005.007-V816.0.7.0.UOQIDXM-release-keys
+- Repo: redmi_mihal_dump
