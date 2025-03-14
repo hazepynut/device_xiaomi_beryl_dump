@@ -1,0 +1,4 @@
+ro.product.camera.livephoto.support=3
+ro.product.device_for_attestation=beryl
+ro.product.manufacturer_for_attestation=Xiaomi
+vendor.wallpaper.color.flag=BK
