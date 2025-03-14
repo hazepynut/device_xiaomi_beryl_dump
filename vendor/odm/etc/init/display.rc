@@ -1,0 +1,13 @@
+on post-fs-data
+    mkdir /mnt/vendor/persist/display 0770 system system
+	mkdir /data/vendor/display 0770 system graphics
+	write /sys/class/mi_display/disp-DSI-0/calib 1
+
+on property:debug.tracing.screen_state=1
+    write /sys/devices/platform/soc/14017000.dsi/14017000.dsi.0/screen_states 1
+
+on property:debug.tracing.screen_state=2
+    write /sys/devices/platform/soc/14017000.dsi/14017000.dsi.0/screen_states 2
+
+on property:debug.tracing.screen_state=3
+    write /sys/devices/platform/soc/14017000.dsi/14017000.dsi.0/screen_states 3

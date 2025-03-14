@@ -1,0 +1,9 @@
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+    class early_hal
+    user nfc
+    group nfc
+    disabled
+
+on post-fs && property:ro.boot.hwname=citrine
+    start vendor.nfc_hal_service
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x80000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="531290"/>
+    <param key="SupportFingerprintCAL" value="true"/>
+  </item>
+  <item name="LightSensor">
+    <param key="BackLightFile" value="/sys/class/leds/lcd-backlight/brightness"/>
+  </item>
+  <item name="SimtrayInsert">
+    <param key="SimtrayInsertFile" value="/sys/devices/platform/soc/soc:simtray/status"/>
+  </item>
+  <item name="citBase">
+    <param key="hasBackgroudItemCount" value="5"/>
+    <param key="isShowGyroSensorCal" value="true"/>
+    <param key="isShowCamCal" value="true"/>
+     <param key="isShowCitResultName" value="true"/>
+    <param key="isShowSarToolItem" value="true"/>
+    <param key="isShowSarToolTyhx" value="true"/>
+    <param key="isSupportSarAuthTool" value="true"/>
+    <param key="isSupportFPCal" value="true"/>
+    <param key="isReviseLocation" value="true"/>
+    <param key="isSurfaceFlingerCal" value="service call SurfaceFlinger 1035 i32 1"/>
+    <param key="isSupportSarNVTool" value="true"/>
+  </item>
+  <item name="BatteryChargeControl">
+    <param key="battery_control_max" value="80"/>
+    <param key="battery_control_min" value="70"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+     <param key="isSupportQvga" value="false"/>
+    <param key="issupportSwicth" value="false"/>
+  </item>
+  <item name="OTG">
+    <param key="OtgVendorFile" value="/sys/bus/usb/devices/2-1/idVendor"/>
+    <param key="OtgVersionFile" value="/sys/bus/usb/devices/2-1/version"/>
+    <param key="OtgProductFile" value="/sys/bus/usb/devices/2-1/idProduct"/>
+    <param key="TypecOrientation" value="/sys/class/power_supply/usb/typec_cc_orientation"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="false"/>
+    <param key="SupportFastCharge" value="false"/>
+    <param key="isSupportIsns" value="true"/>
+    <param key="TypecOrientation" value="/sys/class/power_supply/usb/typec_cc_orientation"/>
+    <param key="ChargeType" value="/sys/class/power_supply/usb/real_type"/>
+    <param key="getChargeStatu" value="/sys/class/power_supply/usb/online"/>
+    <param key="POWER_LEVEL_FQC_MIN" value="50"/>
+    <param key="POWER_LEVEL_FQC_MAX" value="80"/>
+    <param key="IBAT_MIN" value="3000000"/>
+    <param key="IBAT_MAX" value="8000000"/>
+    <param key="Ibus_key" value="/sys/class/power_supply/usb/cp_bus_current"/>
+    <param key="ISNS_MIN" value="1500"/>
+    <param key="ISNS_MAX" value="4000"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="SupportPDPPS" value="true"/>
+    <param key="SupportPDChargeType" value="USB_PPS"/>
+  </item>
+  <item name="Config">
+    <param key="ConnectorType" value="Type-C"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+    <param key ="DiagMode" value="diag,adb"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+    <param key="BackTorchFile1" value="/sys/bus/platform/drivers/flashlights_mt6855/soc:flashlights_mt6855/torch_brightness"/>
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="ShowIFAA" value="true"/>
+    <param key="ShowFIDO" value="true"/>
+    <param key="ShowWidevine" value="true"/>
+    <param key="ShowKeybox" value="true"/>
+    <param key="isMatchBoard_Tp" value="false"/>
+    <param key="station_id" value="true"/>
+    <param key="chargeICSize" value="1"/>
+    <param key="chargeManufactureNode" value="/sys/class/power_supply/usb/main_chg_vendor"/>
+    <param key="memoryType" value="ufs"/>
+    <param key="ufsCid" value="/sys/class/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial"/>
+    <param key="ddrVendor" value="/sys/class/block/sda/device/vendor"/>
+    <param key="isLockDownPath" value="proc/tp_lockdown_info"/>
+    <param key="getPropImei" value="true"/>
+  </item>
+  <item name="AcceSensor">
+    <param key="acceSensorCal" value="lct_sensor_tool -c 1,3,1"/>
+    <param key="supportAcceCal" value="true"/>
+    <param key="getAcceCalResult" value="Success"/>
+  </item>
+  <item name="Gyroscope">
+    <param key="gyroSensorCal" value="lct_sensor_tool -c 4,3,1"/>
+    <param key="supportGyroCal" value="true"/>
+    <param key="getGyroCalResult" value="Success"/>
+  </item>
+  <item name="SarsensorDiff">
+    <param key="main_max_low" value="10450"/>
+    <param key="main_max_high" value="27550"/>
+    <param key="sub_max_low" value="23100"/>
+    <param key="sub_max_high" value="60900"/>
+    <param key="side_max_low" value="33800"/>
+    <param key="side_max_high" value="70200"/>
+    <param key="main_basecup_max" value="213"/>
+    <param key="main_basecup_min" value="159"/>
+    <param key="main_refer_basecup_max" value="145"/>
+    <param key="main_refer_basecup_min" value="91"/>
+    <param key="side_refer_basecup_max" value="70"/>
+    <param key="side_refer_basecup_min" value="34"/>
+    <param key="side_basecup_max" value="112"/>
+    <param key="side_basecup_min" value="76"/>
+    <param key="sub_basecup_max" value="138"/>
+    <param key="sub_basecup_min" value="102"/>
+    <param key="main_far_status_value_comparation" value="200"/>
+    <param key="main_near_status_value_comparation" value="200"/>
+    <param key="sub_far_status_value_comparation" value="200"/>
+    <param key="sub_near_status_value_comparation" value="200"/>
+    <param key="side_far_status_value_comparation" value="200"/>
+    <param key="side_near_status_value_comparation" value="200"/>
+    <param key="isReviseLocation" value="true"/>
+    <param key="cal_cmd" value="lct_sensor_tool -c 72,3,1"/>
+    <param key="Sar_cal" value="true"/>
+  </item>
+  <item name="Battery">
+    <param key="getBatteryId" value="/sys/class/power_supply/battery/resistance_id"/>
+  </item>
+  <item name="AutoTest">
+    <param key="unsupport_items" value="TEST_REARSUBCAMERA,TEST_BATCON,TEST_FRONTFLASH,
+     TEST_CAMERAHARDWARE,TEST_MODEMHARDWARE,TEST_ESIMCARD,TEST_BACKMIC_TO_EARPIECE,
+     TEST_AUX_MIC_TO_EARPIECE,TEST_WIRELESS_CHARGER,TEST_BATCON,TEST_LOUDSPEAKERPACALIBRATION"/>
+    <param key="memoryUfs" value="/sys/class/block/sda/device/block/sda/size"/>
+    <param key="camera_param" value="WIDE,FRONT,ULTRA,MACRO"/>
+    <param key="suport_camera_fuseid" value="true"/>
+    <param key="camera_fuseid_list" value="w,f,m,u"/>
+    <param key="mainname" value="WIDE"/> 
+    <param key="frontname" value="FRONT"/>
+    <param key="isSupport_takeapart" value="true"/>
+  </item>
+  <item name="Audio">
+    <param key="SuportDouleMic" value="true"/>
+  </item>
+
+  <item name="FPSelf">
+    <param key="isSelfTestEnrollMerged" value="false"/>
+    <param key="GoodixCalibrateFile" value="true"/>
+  </item>
+  
+  <item name="FingerprintEnroll">
+    <param key="rmEnrolClick" value="false"/>
+    <param key="isSupportFPTest" value="true"/>
+  </item>
+  
+  <item name="Speak_MIC">
+      <param key="Topspeaker" value="speaker_number=top"/>
+      <param key="Bottomspeaker" value="speaker_number=bottom"/>
+      <param key="Defaultspeaker" value="speaker_number=default"/>
+      <param key="Mainmic " value="mic_mode=main_ns"/>
+      <param key="Topmic" value="mic_mode=top_ns"/>
+      <param key="Defaultmic" value="mic_mode=default"/>
+     </item>
+</parameter>

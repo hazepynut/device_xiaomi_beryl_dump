@@ -1,0 +1,40 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=Redmi
+ro.product.odm.device=beryl
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=beryl
+ro.product.odm.name=beryl
+ro.product.model_for_attestation=beryl
+ro.product.brand_for_attestation=Redmi
+ro.product.name_for_attestation=beryl
+ro.product.manufacturer_for_attestation=Xiaomi
+ro.product.device_for_attestation=beryl
+ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=arm64-v8a
+ro.odm.build.date=Fri Jan 24 16:47:30 CST 2025
+ro.odm.build.date.utc=1737708450
+ro.odm.build.fingerprint=Redmi/beryl/beryl:12/SP1A.210812.016/V816.0.7.0.UOQIDXM:user/release-keys
+ro.odm.build.id=SP1A.210812.016
+ro.odm.build.tags=release-keys
+ro.odm.build.type=user
+ro.odm.build.version.incremental=V816.0.7.0.UOQIDXM
+ro.odm.build.version.release=12
+ro.odm.build.version.release_or_codename=12
+ro.odm.build.version.sdk=31
+####################################
+# from variable ADDITIONAL_ODM_PROPERTIES
+####################################
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+vendor.wallpaper.color.flag=BK
+ro.product.camera.livephoto.support=3
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
+import /vendor/odm/etc/build_${ro.boot.product.hardware.sku}.prop
+

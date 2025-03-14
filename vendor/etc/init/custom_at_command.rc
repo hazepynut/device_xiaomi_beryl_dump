@@ -1,0 +1,19 @@
+service at_ant_open /vendor/bin/hw/custom_at_command open
+    class main
+    user radio
+    group radio
+    oneshot 
+    disabled
+
+service at_ant_close /vendor/bin/hw/custom_at_command close
+    class main
+    user radio
+    group radio 
+    oneshot
+    disabled
+
+on property:vendor.camera.txrx.enabled=1
+    start at_ant_open
+
+on property:vendor.camera.txrx.enabled=0
+    start at_ant_close
